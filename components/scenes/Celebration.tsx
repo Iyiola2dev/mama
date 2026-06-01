@@ -46,6 +46,8 @@ function playCelebrationChime() {
   }
 }
 
+
+
 const textVariants = {
   hidden: { opacity: 0, y: 24, scale: 0.9 },
   visible: (delay: number) => ({
