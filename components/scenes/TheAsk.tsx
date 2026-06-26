@@ -17,6 +17,12 @@ export default function TheAsk({ onYes }: TheAskProps) {
   const [maybeCount, setMaybeCount] = useState(0);
   const [animKey, setAnimKey] = useState(0);
 
+  async function handleYes() {
+    // Fire notification in the background — don't block the scene transition
+    fetch("/api/notify", { method: "POST" }).catch(() => {});
+    onYes();
+  }
+
   function handleMaybe() {
     setMaybeCount((c) => c + 1);
     setAnimKey((k) => k + 1);
@@ -130,7 +136,7 @@ export default function TheAsk({ onYes }: TheAskProps) {
             }}
           >
             <motion.button
-              onClick={onYes}
+              onClick={handleYes}
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
               className="font-inter"
