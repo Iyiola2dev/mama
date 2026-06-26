@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 
-const YT_VIDEO_ID = "ZEuT0FnfTUA";
+const YT_VIDEO_ID = "AXnqkVTFUqY";
 const TRACK_LABEL = "All Time Low — Jon Bellion";
 
 export interface AudioPlayerHandle {
