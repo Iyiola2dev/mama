@@ -10,7 +10,7 @@ const LINES = [
   "From the very first moment I saw you,",
   "I knew there was something special about you.",
   "You make ordinary days feel magical.",
-  "Every laugh we share, every moment together —",
+  "Every laugh we share, every moment together",
   "I treasure all of it.",
   "You are kind, beautiful, and endlessly wonderful.",
   "And I want you to know...",

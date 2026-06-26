@@ -180,7 +180,7 @@ export default function Celebration() {
             lineHeight: 1.5,
           }}
         >
-          I&apos;m the luckiest person alive, Pearl. 💖
+        I Love You, Eloho. 💖
         </motion.p>
 
         <motion.p
